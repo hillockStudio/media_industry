@@ -1,2 +1,3 @@
-#Media Industry
+# MediaIndustry
+
 Kalkulator do wyliczania ceny zamówień.
