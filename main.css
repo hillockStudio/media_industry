@@ -84,6 +84,7 @@ margin-left: 50px; */
   height: 40px !important;
   color: rgb(0, 141, 255) !important;
   font-size: 0.8em !important;
+  text-indent: 5px;
 }
 
 .kalk__input::placeholder {
