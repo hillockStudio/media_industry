@@ -30,7 +30,7 @@ ul#mainnav>li.highlighted-state>a span, ul#mainnav>li.current>a span {
 .kalk__main {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .kalk__right {
