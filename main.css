@@ -196,7 +196,13 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 1150px) {
-  .kalk__main {
+  .kalk__main, .kalk, .kalk__inputs, .kalk__boxes {
     flex-direction: column;
+  }
+  .kalk__right {
+    width: 100%;
+  }
+  .kalk__arrowSvg {
+    margin: 0
   }
 }
