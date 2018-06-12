@@ -67,7 +67,8 @@ margin-left: 50px; */
 }
 
 .kalk__item {
-  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
   height: 85px;
 }
 
