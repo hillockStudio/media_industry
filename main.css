@@ -1,10 +1,14 @@
 .kalk {
+  box-sizing: border-box;
   display: flex;
   font-family: 'Roboto', sans-serif;
   padding: 0 50px;
 }
 
-.kalk__arrow {}
+ul#mainnav>li.highlighted-state>a span, ul#mainnav>li.current>a span {
+  color: rgb(0, 141, 255);
+  border-color: rgb(0, 141, 255);
+}
 
 .kalk__arrowSvg {
   width: 36px;
@@ -23,10 +27,170 @@
   font-weight: 700;
 }
 
+.kalk__main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kalk__right {
+  /*   display: flex;
+flex-direction: column;
+margin-left: 50px; */
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kalk__inputsRight, .kalk__inputsLeft, .kalk__inputsRightWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.kalk__inputsRight {
+  justify-content: space-between;
+}
+
 .kalk__info {
-  min-width: 600px;
+  max-width: 600px;
   background: rgb(248, 248, 248);
   border: 2px solid rgb(0, 141, 255);
   border-radius: 7px;
   padding: 10px;
+}
+
+.kalk__inputs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kalk__item {
+  /* margin-bottom: 20px; */
+  height: 85px;
+}
+
+.kalk__label {
+  color: rgb(0, 141, 255);
+  font-size: 0.7em;
+}
+
+.kalk__input {
+  width: 250px !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+  border-color: rgb(0, 141, 255) !important;
+  height: 40px !important;
+  color: rgb(0, 141, 255) !important;
+  font-size: 0.8em !important;
+}
+
+.kalk__input::placeholder {
+  color: rgb(0, 141, 255) !important;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 5px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  display: none;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+input:checked+.slider {
+  background-color: rgb(0, 141, 255);
+  border-radius: 5px;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px rgb(0, 141, 255);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.kalk__submit {
+  height: 40px;
+  background: rgb(0, 141, 255);
+  color: rgb(255, 255, 255);
+  width: 150px;
+  border-radius: 5px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 1em;
+  padding: 0;
+}
+
+.kalk__boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.kalk__box {
+  width: 45%;
+  margin: 10px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 141, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kalk__infoSpan {
+  margin-left: 10px;
+  color: rgb(0, 141, 255);
+}
+
+.kalk__cost {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  background: rgb(248, 248, 248);
+  border: 2px solid rgb(0, 141, 255);
 }
