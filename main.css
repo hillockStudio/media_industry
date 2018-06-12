@@ -1,0 +1,32 @@
+.kalk {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 50px;
+}
+
+.kalk__arrow {}
+
+.kalk__arrowSvg {
+  width: 36px;
+  margin: 0 50px;
+  fill: rgb(0, 141, 255);
+}
+
+.kalk__header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: rgb(0, 141, 255);
+}
+
+.kalk__bold {
+  font-weight: 700;
+}
+
+.kalk__info {
+  min-width: 600px;
+  background: rgb(248, 248, 248);
+  border: 2px solid rgb(0, 141, 255);
+  border-radius: 7px;
+  padding: 10px;
+}
